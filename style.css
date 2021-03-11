@@ -18,7 +18,7 @@ body {
 	height: 85vh;
 	position: relative;
     background-image: url("./img/bg.jpg");
-    background-position: top;
+    background-position: center;
     background-size: cover;
     
 }

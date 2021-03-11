@@ -1,0 +1,478 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html {
+    background: #fff;
+}
+body {
+	font-family: 'roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+.showcase {
+	width: 100%;
+	height: 85vh;
+	position: relative;
+    background-image: 
+                  url("./img/bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+.img-png {
+    width: auto;
+    height: 17px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 15px;
+}
+
+.top {
+    width: 100%;
+    background: #fff;
+    height: 9vh;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    text-align: center;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0;
+}
+
+nav {
+    background: #fff;
+}
+
+nav .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 8px 5px;
+}
+
+.nav-container .left {
+    display: flex;
+    margin-left: 35px;
+    
+}
+
+.nav-container .left .left-item {
+    margin: 0 18px 0 0;
+}
+
+.nav-container .left .left-img {
+    margin-right: 15px;
+}
+
+.nav-container .right {
+    display: flex;
+    margin-right: 35px;
+}
+
+.nav-container .right .right-img {
+    margin-right: 10px;
+}
+
+.nav-container .links {
+    display: flex;
+    margin-right: 8px;
+    align-items: center;
+    padding-left: 9px;
+}
+
+
+.main .main-section {
+    display: flex;
+    justify-content: center;
+    flex: 1 10px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.main-section .container {
+    width: 45%;
+    height: 100%;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.main .main-section .login-png {
+    background-image: linear-gradient(rgba(32, 204, 104, 0.85), rgba(32, 204, 104, 0.85)),
+                  url("./img/school-supplies.jpg");
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height: 448px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    object-fit: fill;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-left: 2.5rem;
+}
+.main .main-section .login-png .login-logo{
+    padding-right: 1rem;
+    z-index: 20;
+}
+.main .main-section .login-board{
+    background: #fff;
+    width: 55%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: -12px 0px 3px 0px rgba(90, 88, 88, 0.575);
+}
+.main-section .login-board img {
+    width: 100%;
+}
+.main-section .login-board .eSchool-logo {
+    display: none;
+}
+.main-section .login-board .image {
+    display: flex;
+    justify-content: center;
+
+}
+.main .main-section .login-board .text {
+    margin: 10px 0;
+}
+
+.main-section .login-board .text h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+    letter-spacing: .9px;
+    text-align: center;
+    color: #34cc67;
+}
+
+.main-section .login-board .text p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: .9px;
+}
+
+.main-section .login-board .form-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-family: Poppins-Regular, sans-serif;
+}
+  
+
+.login-board .form-wrapper .img-png-container {
+    display: flex;
+    justify-content: center;
+}
+
+.login-board .form-wrapper .usercategory {
+    display: flex ;
+    justify-content: space-evenly;
+    width: 95%;
+    margin: 0 auto;
+    border: 1px solid #34cc67;
+}
+
+.login-board .form-wrapper .usercategory #user {
+    width: 95%;
+    padding: 10px;
+    border: transparent;
+    border-left: .5px solid rgba(170, 165, 165, 0.966);
+    border-radius: 0px 40px 40px 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    letter-spacing: .6px;
+}
+
+.login-board .form-wrapper .username {
+    display: flex ;
+    justify-content: space-evenly;
+    width: 95%;
+    margin: 0 auto;
+    border: 1px solid #34cc67;
+}
+
+input[type="text" ], input[type="password"]{
+    width: 95%;
+    padding: 10px;
+    border: transparent;
+    border-left: .5px solid rgba(170, 165, 165, 0.966);
+    border-radius: 0px 40px 40px 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0;
+}
+
+input[type="text"]:focus, input[type="password"]:focus,
+.usercategory #user:focus {
+    outline: none;
+}
+
+.login-board .form-wrapper .password {
+    display: flex ;
+    justify-content: space-evenly;
+    width: 95%;
+    margin: 0 auto;
+    border: 1px solid #34cc67;
+}
+
+
+.login-board .form-wrapper .space {
+    margin-bottom: 20px;
+    border-radius: 30px;
+    flex: 1;
+}
+
+
+.main .brand-logo  {
+    display: flex;
+}
+
+
+.form-wrapper .btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+label[for="remember-me"] {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+.form-wrapper .forget-password a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+.form-wrapper .forget-password a:hover {
+    color: blue;
+}
+
+button[type="submit"] {
+    display: flex;
+    justify-content: center;
+    margin: 5px auto;
+    padding: 9px 40px;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    background: #34cc67;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+button[type="submit"]:focus {
+    outline: none;
+}
+
+.main .login-board .sponsor {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.login-board .sponsor .s-img {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-radius: 7px;
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.footer-container .f-address {
+    justify-content: center;
+    margin: 12px;
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width: 1024px) {
+    .main .main-section {
+        width: 90%;
+    }
+
+    .login-board .text h3 {
+        font-size: 1em;
+    }
+
+    input[type="text" ], input[type="password"] {
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .brand-logo .b-logo {
+        margin: 10px 25px;
+        height: 50px;
+    }
+    .main-section .login-board .form-wrapper {
+         margin-top: 0px; 
+        padding: 0px; 
+    }
+    .main-section .login-board .form-wrapper {
+        margin-top: 0px;
+        padding: 8px;
+    }
+
+}
+@media only screen and (max-width: 940px) {
+    .main .main-section .login-png {
+        height: 455px;
+    }
+}
+
+@media only screen and  (max-width: 770px) {
+    .main-section .login-board .eSchool-logo  { 
+        display: block; 
+        width: 190px;
+        margin: 10px 0px 10px 0px;
+
+    }  
+    
+    .main-section .login-board .text h3 {
+        display: none;
+        
+    }
+.main .main-section .login-board{
+    box-shadow: none;
+}
+    .main .main-section .container {
+        display: none;
+    }
+
+    .main {
+        height: 80vh;
+    }
+
+    .main .main-section .login-board {
+        width: 100%;
+    }
+    .form-wrapper .forget-password a, label[for="remember-me"]  {
+        font-size: 10px;
+    }
+
+    .main-section .login-board .text h3 {
+        font-size: 1.5rem;
+    }
+
+    .main-section .login-board .text p {
+        font-size: 15px;
+    }
+
+    input[type="text" ], input[type="password"] {
+        padding: 15px;
+       font-size: 15px;
+    }
+
+    .login-board .form-wrapper .usercategory #user {
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    .nav-container .right .right-img {
+        margin-right: 8px;
+    }
+
+    button[type="submit"] {
+        font-size: 18px;
+        border-radius: 20px;
+        padding: 7px 35px;
+    }
+}
+
+@media only screen and  (max-width: 570px) {
+    .main .main-section .login-png {
+        height: 486.94px;
+    }
+    .footer-container .f-address {
+        font-size: 13px;
+    }
+    .main-section .login-board .text h3 {
+        display: none;
+        
+    }
+    .main {
+        height: 80vh;
+    }
+
+    .main .brand-logo .b-logo {
+        margin: 15px auto;
+    }
+
+    .main .main-section .login-board {
+        width: 100%;
+    }
+
+    .nav-container .row-left {
+        display: none;
+    } 
+
+    .row-right {
+        width: 100%;
+    }
+
+    .row-right .right {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .login-board .form-wrapper .usercategory #user {
+        background: transparent;
+    }
+
+    button[type="submit"] {
+        font-size: 12px;
+        border-radius: 20px;
+        padding: 5px 25px;
+    }
+}
+
+
+@media only screen and  (max-width: 320px) {
+    .main-section .login-board .eSchool-logo  { 
+        display: block; 
+        width: 150px;
+    } 
+
+}
